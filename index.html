@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAF / METAR for Airmen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+      .container {
+            max-width: 400px; /* Keeps content within mobile-friendly width */
+            margin: auto;
+            padding: 20px;
+            background: #0F4C81;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            color:#fff;
+
+        }
+
+      h2 {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+      btn {
+
+      }
+      </style>
+  </head>
+
+
+  <body>
+    <div class="container">
+
+    <img src="https://www.dropbox.com/scl/fi/sdsw44gchl0jxqvxweazf/istockphoto-1299870998-612x612.jpg?rlkey=nkwpb47pvkx28lndjpnoigwh0&st=uunq4e1v&raw=1" id="aviation-logo" style="width: 80px; height: auto; margin-bottom: 15px;">
+    
+    <h2>TAF / METAR <br>FOR AIRMEN / DRONE PICS</h2>
+
+    <input type="text" id="tafInput" class="form-control mb-4" placeholder="Enter ICAO Code" />
+    <button class="btn btn-warning w-100" onclick="getTafMetar()">Get TAF/METAR</button>
+    <p style="font-size: 0.85em;">Click for realtime info.</p>
+
+    <div id="taf" style="margin-top: 20px;"></div>
+    <div id="metar"></div>
+   <div id="metarOutput"></div><br>
+   
+     <div id="tfr"></div>
+  <br><br>
+  
+  <button class="btn btn-light w-100">Airspace Info</button>
+</a>
+
+      <p style="font-size: 0.85em;">Please note that the links above direct to external websites.</p>
+
+    </div> 
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
